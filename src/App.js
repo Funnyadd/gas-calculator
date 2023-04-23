@@ -1,9 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { inject } from '@vercel/analytics';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 const App = () => {
+  // Injects vercel's analytics
+  inject();
+  
   const [form, setForm] = useState({
     gasPrice: 0,
     averageConsuption: 0,
@@ -66,7 +70,7 @@ const setField = (field, value) => {
 
         </Form>
       </div>
-      
+
       <div className="p-2" style={{'color':'#ccc','background-color':'#1f1f1f','margin-top':'auto','text-align':'center'}} >
         @Copyrights 2023 - {new Date().getFullYear()} Adam Mihajlovic. All rights reserved.
       </div>
