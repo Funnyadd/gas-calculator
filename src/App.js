@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 const App = () => {
   // Injects vercel's analytics
   inject();
-  
+
   const [form, setForm] = useState({
     gasPrice: 0,
     averageConsuption: 0,
@@ -38,7 +38,7 @@ const setField = (field, value) => {
   return (
     <>
       <div className='App d-flex flex-column align-items-center'>
-        <h1 className='mt-5 mb-5 text-warning' style={{'font-size':'40px'}}>Gas Price Splitter</h1>
+        <h1 className='mt-5 mb-5 text-warning' style={{'font-size':'44px'}}>Gas Price Splitter</h1>
 
         <Form onSubmit={calculateSplitPrice}>
           <Form.Group className="mb-3" controlId="formBasicGasPrice">
@@ -61,13 +61,12 @@ const setField = (field, value) => {
             <Form.Control size="lg" type="number" placeholder="enter number of people" value={form.numberOfPeople} onChange={e => setField("numberOfPeople", e.target.value)} />
           </Form.Group>
           
-          <Button className="mb-3 w-100 mt-3" style={{'font-size':'22px'}} variant="primary" type="submit">Submit</Button>
+          <Button className="mb-3 w-100 mt-3" style={{'font-size':'22px'}} variant="primary" type="submit">Calculate</Button>
 
           <Form.Group className="mt-3" controlId="formBasicNumberOfPeople">
             <Form.Label className="text-white">Price per person: </Form.Label>
             <Form.Text className="answerText text-success" style={{'font-size':'30px'}}> {form.answer.toFixed(2)} $</Form.Text>
           </Form.Group>
-
         </Form>
       </div>
 
