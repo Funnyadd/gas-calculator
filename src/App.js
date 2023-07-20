@@ -14,14 +14,14 @@ const App = () => {
     tripLength: 0,
     numberOfPeople: 0,
     answer: 0
-});
-
-const setField = (field, value) => {
-  setForm({
-      ...form,
-      [field]: value
   });
-}
+
+  const setField = (field, value) => {
+    setForm({
+        ...form,
+        [field]: value
+    });
+  }
 
   const calculateSplitPrice = (event) => {
     event.preventDefault()
