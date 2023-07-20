@@ -10,7 +10,7 @@ const App = () => {
 
   const [form, setForm] = useState({
     gasPrice: 0,
-    averageConsuption: 0,
+    averageConsumption: 0,
     tripLength: 0,
     numberOfPeople: 0,
     answer: 0
@@ -27,7 +27,7 @@ const App = () => {
     event.preventDefault()
 
     var price  = form.tripLength / 100
-        price *= form.averageConsuption
+        price *= form.averageConsumption
         price *= form.gasPrice
         price /= form.numberOfPeople
 
@@ -45,9 +45,9 @@ const App = () => {
             <Form.Control size="lg" type="number" min={0.001} step="0.001" placeholder="enter price" value={form.gasPrice} onChange={e => setField("gasPrice", e.target.value)} />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicAverageConsuption">
-            <Form.Label className="text-white">Average consuption ( L / 100km )</Form.Label>
-            <Form.Control size="lg" type="number" min={0.1} step="0.1" placeholder="enter average" value={form.averageConsuption} onChange={e => setField("averageConsuption", e.target.value)} />
+          <Form.Group className="mb-3" controlId="formBasicAverageConsumption">
+            <Form.Label className="text-white">Average consumption ( L / 100km )</Form.Label>
+            <Form.Control size="lg" type="number" min={0.1} step="0.1" placeholder="enter average" value={form.averageConsumption} onChange={e => setField("averageConsumption", e.target.value)} />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicTripLength">
