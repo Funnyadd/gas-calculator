@@ -62,7 +62,7 @@ const App = () => {
           
           <Button className="mb-3 w-100 mt-3" style={{'font-size':'22px', 'background-color':'#00a3c9', 'border-color':'#00a3c9'}} variant="primary" type="submit">Calculate</Button>
 
-          <Form.Group className="mt-3" controlId="formBasicNumberOfPeople">
+          <Form.Group className="m-3" controlId="formBasicNumberOfPeople">
             <Form.Label className="text-white">Price per person: </Form.Label>
             <Form.Text className="answerText" style={{'font-size':'30px', 'color':'#00a3c9'}}> {form.answer.toFixed(2)} $</Form.Text>
           </Form.Group>
