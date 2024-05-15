@@ -3,6 +3,7 @@
     flex-direction: column;
     height: 100vh;
     --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
 }
 
 .App {
