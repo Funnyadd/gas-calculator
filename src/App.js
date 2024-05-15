@@ -69,7 +69,7 @@ const App = () => {
         </Form>
       </div>
 
-      <div className="p-2" style={{'color':'#ccc','background-color':'#1f1f1f','margin-top':'auto','text-align':'center'}} >
+      <div className="p-2" style={{'color':'#ccc','background-color':'#1f1f1f','margin-top':'auto','padding-bottom':'8px','text-align':'center'}} >
         © 2023 - {new Date().getFullYear()} Adam Mihajlovic. All rights reserved.
       </div>
     </>
