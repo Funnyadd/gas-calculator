@@ -5,6 +5,6 @@
     --bs-bg-opacity: 1;
 }
 
-html {
+.App {
     background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
 }
