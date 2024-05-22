@@ -1,18 +1,17 @@
 {
-  "name": "gas-calculator",
-  "version": "1.0.0",
+  "name": "Gas Price Splitter",
+  "version": "1.0.1",
   "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@vercel/analytics": "^1.0.1",
-    "bootstrap": "^5.3.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.8.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^3.4.0"
+    "@vercel/analytics": "^1.2.2",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+    "web-vitals": "^4.0.1"
+  },
+  "devDependencies" : {
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
